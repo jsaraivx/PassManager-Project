@@ -3,6 +3,11 @@
                                 Por João Saraiva, e eu disponibilizei este projeto
                                 Para o público, para que o conhecimento se espalhe 
                                 sempre! 
+                                 
+                                 This project is being developed entirely
+                                 By João Saraiva, and I made this project available
+                                 For the public, for knowledge to spread
+                                 ever!
 """
 """ 
                     ESTRUTURA FUNCIONAL DE GERAR UM ARQUIVO NA PASTA COM O RELATIONAL PATH
