@@ -31,8 +31,16 @@ print("")
 
 senhaAserGravada = input("\n" "Digite sua senha! ")
 
-"""
+#Processamento para arquivo .txt
 senhaSalvas = open("Arquivos\SenhasSalvas\senhas.txt",'a')
-senhaSalvas.write(senhaAserGravada, "=" redeSocial)
+senhaSalvas.write(User)
+senhaSalvas.write(" ")
+senhaSalvas.write("=")
+senhaSalvas.write(" ")
+senhaSalvas.write(senhaAserGravada)
+senhaSalvas.write(" ")
+senhaSalvas.write("=")
+senhaSalvas.write(" ")
+senhaSalvas.write(redeSocial)
 senhaSalvas.write("\n")
-"""
+
