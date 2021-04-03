@@ -22,8 +22,10 @@
 
 dados=open("Arquivos\SenhasSalvas\senhas.txt",'r')
 linha = dados.readlines()
-print(linha, end=" ")
-dados.close()
 
+lista = linha
+lista.sort()
+
+print(lista)
 
 
