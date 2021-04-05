@@ -10,50 +10,6 @@
                                  For the public, for knowledge to spread
                                  ever!
 """
-""" 
-                    EintUTURA FUNCIONAL DE GERAR UM ARQUIVO NA PASTA COM O RELATIONAL PATH
-arquivo = open("Arquivos\SenhasSalvas\senhas.txt",'a')
-arquivo.write("By: Joao saraivx")
-arquivo.close()
-
-"""
-"""#Rede Social
-print("Para inciarmos você deve digitar o nome da rede social que você quer armazenar a senha.")
-redeSocial = input("\n" "Digite o nome da rede social. ")
-print("")
-
-#Login
-print("Agora você deverá digitar o nome de usuario/email vinculado a conta.")
-print("Como por exemplo: \n"
-"@exemplodeuser ou")
-print("exemplo@email.com.br")
-print("")
-User = input("\n" "Digite o seu nome de usúario. ")
-
-#Senhas
-print("Olá, para começarmos a salvar as senhas, você deverá digitar \n"
-"sua senha ")
-print("")
-
-senhaAserGravada = input("\n" "Digite sua senha! ")
-
-#Processamento para arquivo .txt
-senhaSalvas = open("Arquivos\SenhasSalvas\senhas.txt",'a')
-senhaSalvas.write(redeSocial)
-senhaSalvas.write(" ")
-senhaSalvas.write("==>")
-senhaSalvas.write(" ")
-senhaSalvas.write(User)
-senhaSalvas.write(" ")
-senhaSalvas.write("==")
-senhaSalvas.write(" ")
-senhaSalvas.write(senhaAserGravada)
-senhaSalvas.write("\n")
-
-                            VERSÃO DESATUALIZADA DE GUARDAR SENHA, SERÁ REFEITA DO ZERO.
-
-"""
-
     #INTRODUÇÃO 
 print("\t \t Olá, primeiro selecione a sua rede social. \n"
 "\t \t Caso a sua rede social favorita não esteja aqui,\n"
@@ -89,6 +45,8 @@ print("\t\tLISTA DE REDES SOCIAIS\n",
  "\t\t Reddit = 11\n",
  "\t\t MiCloud = 12")
 opcaoselecionada = int(input("\t\tOpção Selecionada: "))
+    
+    
     #Inicio de captura de daodos.
 if(opcaoselecionada == 1):
     opcaoselecionada = 1
@@ -141,8 +99,8 @@ elif(opcaoselecionada == 12):
 else:
     print("\t\tO valor que você digitou está errado!\n"
     "\t\tpor favor reinicie o programa.\n")
-#print("\n\n\t\t", opcaoselecionada)
 
+    #Decisão do arquivo a ser escrito.
 senhagerenciada = opcaoselecionada
 if senhagerenciada==1:
     arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaIntagram.txt",'a')
@@ -180,3 +138,22 @@ elif senhagerenciada == 11:
 elif senhagerenciada == 12:
     arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaMiCloud.txt",'a')
 
+    #Processamento dos dados de login.
+
+print("\n\t\tAgora, preciso que você me informe o usuário/email a ser salvo: ")
+usuario = input("\t\t Usuário a ser salvo: ")
+
+print("\n\t\tAgora, por último preciso da senha a ser salva:")
+senha = input("\t\t Senha a ser salva: ")
+
+arquivoasersalvo.write(usuario)
+arquivoasersalvo.write(' ')
+arquivoasersalvo.write('==')
+arquivoasersalvo.write(' ')
+arquivoasersalvo.write(senha)
+
+    #finalização do processamento
+
+print("\n\t\tO processamento terminou, os dados foram salvos.\n\t\t"
+"Agora para buscar as senhas salvas, é só abrir o programa\n\t\t"
+'ConsultaSenha.py.')
