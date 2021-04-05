@@ -10,22 +10,9 @@
                                  ever!
 """
 
-"""
-                            ESTE PROGRAMA SERÁ MELHORADO CONFORME O MEU CONHECIMENTO AVANÇAR,
-                            POR ENQUANTO ELES APENAS RETORNARÁ OS ARQUIVOS SEM ORDENAR. 
-
-                            THIS PROGRAM WILL BE IMPROVED ACCORDING TO MY KNOWLEDGE ADVANCING,
-                            WHILE THEY WILL ONLY RETURN THE FILES WITHOUT ORDERING.
-"""
-
-
-
-dados=open("Arquivos\SenhasSalvas\senhas.txt",'r')
-linha = dados.readlines()
-
-lista = linha
-lista.sort()
-
-print(lista)
-
-
+#filtro da rede social a ser buscada.
+#comprovando o nome da rede social a ser buscada.
+#retorno de dados.
+#pergunta se deve buscar mais alguma lista.
+#
+#
