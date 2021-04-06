@@ -151,3 +151,4 @@ def consultarsenhassalvas():
         print('\t\t',listaa)
         #pergunta se deve buscar mais alguma lista.
 consultarsenhassalvas()
+input('')
