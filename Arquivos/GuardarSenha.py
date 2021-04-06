@@ -159,6 +159,7 @@ def programaparasalvar():
     arquivoasersalvo.write('==')
     arquivoasersalvo.write(' ')
     arquivoasersalvo.write(senha)
+    arquivoasersalvo.write('\n')
 
         #finalização do processamento
 
@@ -176,4 +177,3 @@ def depoisdesalvardados():
     else:
         print("\t\tVocê digitou errado!\n")
 depoisdesalvardados();
-
