@@ -1,5 +1,7 @@
 import time
 import os
+import utils
+
 def programaparasalvar():
     # coding: utf-8
     """
@@ -51,100 +53,90 @@ def programaparasalvar():
         
         
         #Inicio de captura de daodos.
-    if(opcaoselecionada == 1):
-        opcaoselecionada = 1
-        print("\t\tVocê selecionou: Instagram <=")
-
-    elif(opcaoselecionada == 2):
-        opcaoselecionada = 2
-        print("\t\tVocê selecionou: Facebook <=")
-
-    elif(opcaoselecionada == 3):
-        opcaoselecionada = 3
-        print("\t\tVocê selecionou: GitHub <=")
-
-    elif(opcaoselecionada == 4):
-        opcaoselecionada = 4
-        print("\t\tVocê selecionou: Twitter <=")
-
-    elif(opcaoselecionada == 5):
-        opcaoselecionada = 5
-        print("\t\tVocê selecionou Google <=")
-
-    elif(opcaoselecionada == 6):
-        opcaoselecionada = 6
-        print("\t\tVocê selecionou: YouTube <=")
-
-    elif(opcaoselecionada == 7 ):
-        opcaoselecionada = 7
-        print("\t\tVocê selecionou: LinkedIn <=")
-
-    elif(opcaoselecionada == 8):
-        opcaoselecionada = 8
-        print("\t\tVocê selecionou: TikTok <=")
-
-    elif(opcaoselecionada == 9):
-        opcaoselecionada = 9
-        print("\t\tVocê selecionou: SnapChat <=")
-
-    elif(opcaoselecionada == 10):
-        opcaoselecionada = 10
-        print("\t\tVocê selecionou: iCloud <=")
-
-    elif(opcaoselecionada == 11):
-        opcaoselecionada = 11
-        print("\t\tVocê selecionou: Reddit <=")
-
-    elif(opcaoselecionada == 12):
-        opcaoselecionada = 12
-        print("\t\tVocê selecionou: MiCloud <=")
-
-    else:
-        os.system('color 4')
-        print("\t\tO valor que você digitou está errado!\n"
-        "\t\to programa será fechado em 4 segundos.\n")
-        time.sleep(4)
-        os.system('cls')
-        exit(0)
+    match opcaoselecionada:
+        case 1:
+            opcaoselecionada = 1
+            print("\t\tVocê selecionou: Instagram <=")
+        case 2:
+            opcaoselecionada = 2
+            print("\t\tVocê selecionou: Facebook <=")
+        case 3:
+            opcaoselecionada = 3
+            print("\t\tVocê selecionou: GitHub <=")
+        case 4:
+            opcaoselecionada = 4
+            print("\t\tVocê selecionou: Twitter <=")
+        case 5:
+            opcaoselecionada = 5
+            print("\t\tVocê selecionou Google <=")
+        case 6:
+            opcaoselecionada = 6
+            print("\t\tVocê selecionou: YouTube <=")
+        case 7:
+            opcaoselecionada = 7
+            print("\t\tVocê selecionou: LinkedIn <=")
+        case 8:
+            opcaoselecionada = 8
+            print("\t\tVocê selecionou: TikTok <=")
+        case 9:
+            opcaoselecionada = 9
+            print("\t\tVocê selecionou: SnapChat <=")
+        case 10:
+            opcaoselecionada = 10
+            print("\t\tVocê selecionou: iCloud <=")
+        case 11:
+            opcaoselecionada = 11
+            print("\t\tVocê selecionou: Reddit <=")
+        case 12:
+            opcaoselecionada = 12
+            print("\t\tVocê selecionou: MiCloud <=")
+        case _:
+            os.system('color 4')
+            print("\t\tO valor que você digitou está errado!\n"
+            "\t\to programa será fechado em 4 segundos.\n")
+            time.sleep(4)
+            os.system('cls')
+            exit(0)
         
 
         #Decisão do arquivo a ser escrito.
     senhagerenciada = opcaoselecionada
+
     if senhagerenciada==1:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaIntagram.txt",'a')
+        arquivoasersalvo = open(utils.get_path("Instagram.txt"),'a')
 
     elif senhagerenciada == 2:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaFacebook.txt",'a')
+        arquivoasersalvo = open(utils.get_path("Facebook.txt"),'a')
 
     elif senhagerenciada == 3:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaGitHub.txt",'a')
+        arquivoasersalvo = open(utils.get_path("GitHub.txt"),'a')
 
     elif senhagerenciada == 4:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaTwitter.txt",'a')
+        arquivoasersalvo = open(utils.get_path("Twitter.txt"),'a')
 
     elif senhagerenciada == 5:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaGoogle.txt",'a')
+        arquivoasersalvo = open(utils.get_path("Google.txt"),'a')
 
     elif senhagerenciada == 6:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaYoutube.txt",'a')
+        arquivoasersalvo = open(utils.get_path("YouTube.txt"),'a')
 
     elif senhagerenciada == 7:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaLinkedIn.txt",'a')
+        arquivoasersalvo = open(utils.get_path("LinkedIn.txt"),'a')
 
     elif senhagerenciada == 8:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaTikTok.txt",'a')
+        arquivoasersalvo = open(utils.get_path("TikTok.txt"),'a')
 
     elif senhagerenciada == 9:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaSnapChat.txt",'a')
+        arquivoasersalvo = open(utils.get_path("SnapChat.txt"),'a')
 
     elif senhagerenciada == 10:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaiCloud.txt",'a')
+        arquivoasersalvo = open(utils.get_path("iCloud.txt"),'a')
 
     elif senhagerenciada == 11:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaReddit.txt",'a')
+        arquivoasersalvo = open(utils.get_path("Reddit.txt"),'a')
 
     elif senhagerenciada == 12:
-        arquivoasersalvo = open("Arquivos\SenhasSalvas\SenhaMiCloud.txt",'a')
+        arquivoasersalvo = open(utils.get_path("MiCloud.txt"),'a')
 
         #Processamento dos dados de login.
 
@@ -166,7 +158,8 @@ def programaparasalvar():
     print("\n\t\tO processamento terminou, os dados foram salvos.\n\t\t"
     "Agora para buscar as senhas salvas, é só abrir o programa\n\t\t"
     'ConsultaSenha.py ')
-programaparasalvar();
+
+
 def depoisdesalvardados():
     print("\n\t\tVocê deseja salvar outra senha?\n")
     escolher1 = int(input('\t\tDigite 1 para sim, 2 para sair do programa.\n'))
@@ -176,4 +169,3 @@ def depoisdesalvardados():
         exit(0)
     else:
         print("\t\tVocê digitou errado!\n")
-depoisdesalvardados();

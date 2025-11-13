@@ -11,21 +11,22 @@
 """
 import time
 import os
+import utils 
 
 def consultarsenhassalvas():
     redes = {
-        1: ("Instagram", "Arquivos/SenhasSalvas/SenhaInstagram.txt"),
-        2: ("Facebook", "Arquivos/SenhasSalvas/SenhaFacebook.txt"),
-        3: ("GitHub", "Arquivos/SenhasSalvas/SenhaGitHub.txt"),
-        4: ("Twitter", "Arquivos/SenhasSalvas/SenhaTwitter.txt"),
-        5: ("Google", "Arquivos/SenhasSalvas/SenhaGoogle.txt"),
-        6: ("YouTube", "Arquivos/SenhasSalvas/SenhaYoutube.txt"),
-        7: ("LinkedIn", "Arquivos/SenhasSalvas/SenhaLinkedIn.txt"),
-        8: ("TikTok", "Arquivos/SenhasSalvas/SenhaTikTok.txt"),
-        9: ("SnapChat", "Arquivos/SenhasSalvas/SenhaSnapChat.txt"),
-        10: ("iCloud", "Arquivos/SenhasSalvas/SenhaiCloud.txt"),
-        11: ("Reddit", "Arquivos/SenhasSalvas/SenhaReddit.txt"),
-        12: ("MiCloud", "Arquivos/SenhasSalvas/SenhaMiCloud.txt")
+        1: ("Instagram", utils.get_path("Instagram.txt")),
+        2: ("Facebook", utils.get_path("Facebook.txt")),
+        3: ("GitHub", utils.get_path("GitHub.txt")),
+        4: ("Twitter", utils.get_path("Twitter.txt")),
+        5: ("Google", utils.get_path("Google.txt")),
+        6: ("YouTube", utils.get_path("YouTube.txt")),
+        7: ("LinkedIn", utils.get_path("LinkedIn.txt")),
+        8: ("TikTok", utils.get_path("TikTok.txt")),
+        9: ("SnapChat", utils.get_path("SnapChat.txt")),
+        10: ("iCloud", utils.get_path("iCloud.txt")),
+        11: ("Reddit", utils.get_path("Reddit.txt")),
+        12: ("MiCloud", utils.get_path("MiCloud.txt"))
     }
 
     while True:
