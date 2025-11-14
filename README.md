@@ -1,4 +1,4 @@
-# PassManager Project
+# PassManager Project - IN Progress
  Olá, obrigado por visitar o meu perfil!
 Este projeto foi criado para aperfeiçoar meus conhecimentos em python, e também poder ajudar a todos os que sofriam com o mesmo problemas que eu, pois quem nunca se deparou de ter que gerenciar todas as suas senhas em um só local? Pois é, eu sei que existem serviços como o google, que já possuem essas ferramentas de forma aprimorada, porém este projeto foi criado apenas para iniciar a mostrar o meu empenho, acredito que haverão bastante projetos assim aqui no meu perfil! Todos criados do zero! 
 
@@ -20,3 +20,10 @@ The project works as follows:
           2. after following the step by step through the terminal, the files will be saved to the .txt          
           3. Now, you can view your data through the ConsultaSenha.py program                
           4. Congratulations, you can leave your recommendations here, or by creating forks            
+
+## Features:
+
+CRUD for Passwords in .txt = DONE
+FIX bug to MacOS/Linux = DONE
+Optimizing Data Storage process = WIP
+Develop a frontend = To do
